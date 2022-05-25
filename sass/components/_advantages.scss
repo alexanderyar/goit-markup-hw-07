@@ -2,12 +2,14 @@
 .advantages {
     @extend %container;
     margin-top: 0px;
+
+    &--list {
+            @extend %list;
+            display: flex;
+        }
 }
 
-.advantages--list {
-    @extend %list;
-    display: flex;
-}
+// .advantages
 
 .advantages--item {
     width: calc((100% - 90px) / 3);
