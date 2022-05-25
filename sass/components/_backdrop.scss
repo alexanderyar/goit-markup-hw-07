@@ -259,7 +259,7 @@ input {
      pointer-events: none;
      transform: translate(-50%, -50%);
 
-     .checkbox:checked~& {
+     .checkbox:checked ~ & {
          background-image: url('../images/icon-check.svg');
          background-size: contain;
          background-origin: border-box;
