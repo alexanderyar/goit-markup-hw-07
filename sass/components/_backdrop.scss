@@ -260,7 +260,7 @@ input {
      transform: translate(-50%, -50%);
 
      .checkbox:checked ~ & {
-         background-image: url('../images/icon-check.svg');
+         background-image: url(../images/icon-check.svg);
          background-size: contain;
          background-origin: border-box;
          border: transparent;
