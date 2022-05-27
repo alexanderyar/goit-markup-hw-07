@@ -33,36 +33,11 @@ img {
     margin-right: auto;
 }
 
-@mixin logo ($colorLogo) {
-    /* outline: 1px solid tomato; */
 
-    font-family: $logoFont;
-    color: $colorLogo;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-}
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-
-    &-bgc {
-        max-width: 1600px;
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/background-image.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-color: #188CE8;
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
 
     &-title {
         color: $secondary-text-color;

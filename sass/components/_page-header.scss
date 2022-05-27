@@ -17,6 +17,8 @@
     align-items: center;
 }
 
+
+
 .logo--header {
     @include logo(black);
 
@@ -24,6 +26,8 @@
         color: $accent-color;
     }
 }
+
+
 
 .site-nav__list {
     @extend %list;
@@ -35,23 +39,27 @@
             /* outline: 2px solid tomato; */
         }
     
-    & .current {
-            position: relative;
-            color: $accent-color;
-
-            &::after {
-                    position: absolute;
-                    display: inline-block;
-                    content: '';
-                    width: 100%;
-                    height: 4px;
-                    background-color: $accent-color;
-                    bottom: 0px;
-                    left: 0;
-                    border-radius: 2px;
-                }
-        }
+    
 }
+
+.current {
+    position: relative;
+    color: $accent-color;
+
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        bottom: 0px;
+        left: 0;
+        border-radius: 2px;
+    }
+}
+
+
 
 .site-nav__link {
     padding-top: 32px;
@@ -85,26 +93,28 @@
     &__item + &__item {
             margin-left: 50px;
         }
-    &__email {
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: $primary-text-color;
-    
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        font-weight: 500;
-        font-size: $mainFont-size;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-    
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
+
+}
+
+.auth__email {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $primary-text-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 500;
+    font-size: $mainFont-size;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
     }
 }
 
-// .auth
+
 
 .auth__icon {
     margin-right: 10px;

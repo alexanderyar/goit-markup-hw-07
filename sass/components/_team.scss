@@ -26,12 +26,7 @@
             margin-right: 0px;
         }
 
-        &__desc--padding {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-right: 32px;
-            padding-left: 32px;
-        }
+        
 
         &--subheader {
         
@@ -40,55 +35,62 @@
             line-height: 1.17;
             color: $secondary-text-color;
         }
+}
 
-        &__position {
-            font-size: 16px;
-            line-height: 1.19;
-        }
 
-        &__icon-list {
-            @extend %list;
-            display: flex;
-            margin: 0px;
-            margin-top: 16px;
-            justify-content: center;
-        }
 
-        &__link {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: transparent;
-        
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.team__desc--padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
 
-            &:hover, &:focus {
-                    background-color: $accent-color;
-                }
-        }
-
-        &__social-svg {
-            display: block;
-            fill: #afb1b8;
-        
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        .team__link:hover &, .team__link:focus & {
-                fill: #ffffff;
-            }
-        }
-
+.team__position {
+    font-size: 16px;
+    line-height: 1.19;
 }
 
 .icon-list__item + .icon-list__item {
     margin-left: 10px;
 }
 
+ .team__icon-list {
+     @extend %list;
+     display: flex;
+     margin: 0px;
+     margin-top: 16px;
+     justify-content: center;
+ }
 
+ .team__link {
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: transparent;
 
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
+         background-color: $accent-color;
+     }
+ }
+
+.team__social-svg {
+    display: block;
+    fill: #afb1b8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .team__link:hover &,
+    .team__link:focus & {
+        fill: #ffffff;
+    }
+}
 
 
 
