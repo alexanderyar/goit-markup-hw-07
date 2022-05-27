@@ -21,10 +21,11 @@
 
 .logo--header {
     @include logo(black);
+}
 
-    &--web {
+
+.logo--header--web {
         color: $accent-color;
-    }
 }
 
 
