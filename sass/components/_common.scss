@@ -1,7 +1,7 @@
 body {
     color: $primary-text-color;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
+    font-family: $mainFont;
+    font-size: $mainFont-size;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
@@ -36,7 +36,7 @@ img {
 @mixin logo ($colorLogo) {
     /* outline: 1px solid tomato; */
 
-    font-family: raleway, sans-serif;
+    font-family: $logoFont;
     color: $colorLogo;
     font-weight: 700;
     font-size: 26px;
@@ -44,6 +44,31 @@ img {
     text-decoration: none;
 }
 
-//  &-web {
-//      color: $accent-color;
-//  }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-bgc {
+        max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/background-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #188CE8;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    &-title {
+        color: $secondary-text-color;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}

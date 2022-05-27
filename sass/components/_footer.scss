@@ -36,7 +36,7 @@
             margin-left: auto;
             color:$primary-text-color;
             font-weight: 500;
-            font-size: 14px;
+            font-size: $mainFont-size;
             line-height: 1.14;
             letter-spacing: 0.02em;
             text-decoration: none;
@@ -50,7 +50,7 @@
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
         font-style: normal;
-        font-size: 14px;
+        font-size: $mainFont-size;
     }
 
 }
